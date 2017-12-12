@@ -1,0 +1,9 @@
+.DS_Store
+.cache/
+venv/
+tests/__pycache__/*
+wowza/__pycache__/*
+tests/vcr_cassettes/*
+wrapper/__pycache__/*
+MANIFEST
+dist/*
