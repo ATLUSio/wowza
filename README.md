@@ -40,7 +40,7 @@ Import the desired object into the code, and instantiate it with the API/Access 
 ```python
 from wowza import LiveStreams, WOWZA_API_KEY, WOWZA_ACCESS_KEY
 # Instantiate a LiveStreams instance
-response = wowza_instance = LiveStreams(
+wowza_instance = LiveStreams(
     api_key = WOWZA_API_KEY,
     access_key = WOWZA_ACCESS_KEY
 )
@@ -108,7 +108,7 @@ wowza_instance.start(stream_id)
 - Python 3.6+
 - `requests` library
 - `pytest` library
-- `vcr` library
+- `vcrpy` library
 
 # License
 
