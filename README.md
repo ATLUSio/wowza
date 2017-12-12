@@ -38,7 +38,7 @@ export WOWZA_ACCESS_KEY = '0987654321zyxwvytsrqonmkjihgfedcba'
 Import the desired object into the code, and instantiate it with the API/Access keys:
 
 ```python
-from wowza import LiveStreams
+from wowza import LiveStreams, WOWZA_API_KEY, WOWZA_ACCESS_KEY
 # Instantiate a LiveStreams instance
 response = wowza_instance = LiveStreams(
     api_key = WOWZA_API_KEY,
@@ -57,7 +57,7 @@ export WOWZA_PRODUCTION_LEVEL='PROD'
 -----
 
 ```python
-from wowza import LiveStreams
+from wowza import LiveStreams, WOWZA_API_KEY, WOWZA_ACCESS_KEY
 
 # Instantiate a LiveStreams instance
 response = wowza_instance = LiveStreams(
