@@ -150,6 +150,15 @@ class LiveStreams(object):
             })
         return response.json()
 
+    def stats(self, stream_id):
+        """
+        This operation returns a hash of metrics keys, each of which identifies a status, text description, unit, and value
+        """
+        path = self.base_url + "live_streams/{}/stats".format(stream_id)
+        response = session.get(path, headers=self.headers)
+        return response.json()
+
+
     def new_code(self, stream_id):
         """
         Used to generate a new connection code for a live stream
