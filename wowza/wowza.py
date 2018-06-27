@@ -811,7 +811,7 @@ class Transcoders(object):
                     'message': 'Option provided is invalid. Valid options are: {}'\
                         .format(valid_options)
                 })
-            path = path + option
+            path = path + "/" + option
         response = session.get(path, headers=self.headers)
         return response.json()
 
